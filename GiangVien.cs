@@ -15,6 +15,10 @@ namespace QLCanBo
         public string khoa { get; set; }
         public float soTiet { get; set; }
         public TrinhDo trinhDo { get; set; }
+        public GiangVien():base()
+        {
+
+        }
         public GiangVien(string _hoTen, float _phuCap, float _heSoLuong, string _khoa, TrinhDo _tringDo, float _soTiet):base()
         {
             khoa = _khoa;
