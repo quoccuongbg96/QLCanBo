@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QLCanBo
 {
-   public class Nguoi
+    class Nguoi
     {
         public string hoTen { get; set; }
         public float phuCap { get; set; }
@@ -24,17 +24,7 @@ namespace QLCanBo
         }
         public virtual void Luong(int _heSoLuong, int _phuCap,float _cong, int _heSo)
         {
-            luong = _heSoLuong * 730 + _phuCap + _cong * _heSo;
-        }
-        public virtual void Nhap()
-        {
-            Nguoi a = new Nguoi();
-            Console.WriteLine("Ten");
-            a.hoTen = Console.ReadLine();
-            Console.WriteLine("Phu Cap");
-            a.phuCap =float.Parse(Console.ReadLine());
-            Console.WriteLine("He So Lương");
-            a.heSoLuong =float.Parse(Console.ReadLine());
+            
         }
 
     }
