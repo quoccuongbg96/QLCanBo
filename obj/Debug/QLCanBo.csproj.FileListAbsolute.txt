@@ -1,1 +1,6 @@
 C:\Users\hdlaptop\Desktop\QLCanBo\QLCanBo\bin\Debug\QLCanBo.exe.config
+C:\Users\hdlaptop\Desktop\QLCanBo\QLCanBo\bin\Debug\QLCanBo.exe
+C:\Users\hdlaptop\Desktop\QLCanBo\QLCanBo\bin\Debug\QLCanBo.pdb
+C:\Users\hdlaptop\Desktop\QLCanBo\QLCanBo\obj\Debug\QLCanBo.csprojResolveAssemblyReference.cache
+C:\Users\hdlaptop\Desktop\QLCanBo\QLCanBo\obj\Debug\QLCanBo.exe
+C:\Users\hdlaptop\Desktop\QLCanBo\QLCanBo\obj\Debug\QLCanBo.pdb

@@ -15,6 +15,10 @@ namespace QLCanBo
         public string khoa { get; set; }
         public float soTiet { get; set; }
         public TrinhDo trinhDo { get; set; }
+        public GiangVien()
+        {
+
+        }
         public GiangVien(string _hoTen, float _phuCap, float _heSoLuong, string _khoa, TrinhDo _tringDo, float _soTiet):base()
         {
             khoa = _khoa;
@@ -24,6 +28,43 @@ namespace QLCanBo
         public override void Luong(int _heSoLuong, int _phuCap, float _cong, int _heSo)
         {
             base.Luong(_heSoLuong, _phuCap, _cong = soTiet, _heSo = 45);
+        }
+        public void KTTringDo()
+        {
+            Console.WriteLine("Tring Do: Cu Nhan(1), Thac Si(2), Tien Si(3)");
+            int cke = int.Parse(Console.ReadLine());
+            if (cke == 1)
+            {
+                trinhDo = TrinhDo.CuNhan;
+            }
+            else if (cke == 2)
+            {
+                trinhDo = TrinhDo.ThacSi;
+            }
+            else if (cke == 3)
+            {
+                trinhDo = TrinhDo.TienSi;
+            }
+            else
+            {
+                Console.WriteLine("khong ton tai !!!");
+            }
+        }
+        public override void Nhap()
+        {
+            base.Nhap();
+            Console.WriteLine("Khoa: ");
+            khoa = Console.ReadLine();
+            KTTringDo();
+            Console.WriteLine("So Tiet Day Trong Thang: ");
+            soTiet = int.Parse(Console.ReadLine());      
+        }
+        public override void Xuat()
+        {
+            base.Xuat();
+            Console.WriteLine("Khoa "+khoa);
+            Console.WriteLine(trinhDo);
+            Console.WriteLine(soTiet);
         }
     }
 }

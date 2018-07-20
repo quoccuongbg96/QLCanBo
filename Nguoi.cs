@@ -24,8 +24,24 @@ namespace QLCanBo
         }
         public virtual void Luong(int _heSoLuong, int _phuCap,float _cong, int _heSo)
         {
-            
+            float luong = _heSoLuong * 730 + _phuCap + _cong * _heSo;
         }
-
+        public virtual void Nhap()
+        {
+            Console.WriteLine("Ho ten: ");
+            hoTen = Console.ReadLine();
+            Console.WriteLine("Phu Cap: ");
+            phuCap = int.Parse(Console.ReadLine());
+            Console.WriteLine("He So Luong: ");
+            heSoLuong = float.Parse(Console.ReadLine());
+        }
+        public virtual void Xuat()
+        {
+            Console.WriteLine("---------Thong Tin--------");
+            Console.WriteLine("Ho Ten: "+hoTen);
+            Console.WriteLine("Phu Cap: " + phuCap);
+            Console.WriteLine("He So Luong: " + heSoLuong);
+            Console.WriteLine("Luong: " + luong);
+        }
     }
 }
