@@ -16,14 +16,27 @@ namespace QLCanBo
         {
 
         }
+        public static string TachChuoi(string chuoi)
+        {
+            string ten;
+            string[] arrTen = chuoi.Split(' ');
+            if (arrTen.Length >= 2)
+            {
+                ten = arrTen[arrTen.Length - 1];
+                return ten;
+            }
+            return "khong co gia tri";
+        }
         public Nguoi(string _hoTen, float _phuCap, float _heSoLuong)
         {
             hoTen = _hoTen;
             phuCap = _phuCap;
             heSoLuong = _heSoLuong;
         }
-        public void PhuCap(GiangVien.TrinhDo trinhDo, NVHanhChinh.ChucVu chucVu)
+        public void PhuCap()
         {
+            var trinhDo = new GiangVien.TrinhDo();
+            var chucVu = new NVHanhChinh.ChucVu();
             if (trinhDo == GiangVien.TrinhDo.CuNhan)
             {
                 phuCap = 300;
@@ -41,9 +54,11 @@ namespace QLCanBo
                  phuCap = 2000;
             }
         }
-        public virtual void Luong(int _heSoLuong, int _phuCap,float _cong, int _heSo)
+        public virtual void Luong(float _heSoLuong, float _phuCap,float _cong, float _heSo)
         {
-            float luong = _heSoLuong * 730 + _phuCap + _cong * _heSo;
+            heSoLuong = _heSoLuong;
+            phuCap = _phuCap;
+            luong = _heSoLuong * 730 + _phuCap + _cong * _heSo;
         }
         public virtual void Nhap()
         {

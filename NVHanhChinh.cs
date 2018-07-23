@@ -23,10 +23,10 @@ namespace QLCanBo
         {
 
         }
-            
-        public override void Luong(int _heSoLuong, int _phuCap, float _cong, int _heSo)
+
+        public override void Luong(float _heSoLuong, float _phuCap, float _cong, float _heSo)
         {
-            base.Luong(_heSoLuong, _phuCap, _cong = ngayCong, _heSo=30);
+            base.Luong(_heSoLuong, _phuCap, _cong = ngayCong, _heSo = 30);
         }
         public override void Nhap()
         {
@@ -61,9 +61,9 @@ namespace QLCanBo
         public override void Xuat()
         {
             base.Xuat();
-            Console.WriteLine("Phong Ban " + phongBan);
-            Console.WriteLine("Chuc Vu"+chucvu);
-            Console.WriteLine("Ngay Cong"+ngayCong);
+            Console.WriteLine("Phong Ban: " + phongBan);
+            Console.WriteLine("Chuc Vu: "+chucvu);
+            Console.WriteLine("Ngay Cong: "+ngayCong);
         }
     }
 }

@@ -25,7 +25,7 @@ namespace QLCanBo
             trinhDo = _tringDo;
             soTiet = _soTiet;
         }
-        public override void Luong(int _heSoLuong, int _phuCap, float _cong, int _heSo)
+        public override void Luong(float _heSoLuong, float _phuCap, float _cong, float _heSo)
         {
             base.Luong(_heSoLuong, _phuCap, _cong = soTiet, _heSo = 45);
         }
@@ -62,9 +62,9 @@ namespace QLCanBo
         public override void Xuat()
         {
             base.Xuat();
-            Console.WriteLine("Khoa "+khoa);
-            Console.WriteLine("Tring Do"+trinhDo);
-            Console.WriteLine("So Tiet"+soTiet);
+            Console.WriteLine("Khoa: "+khoa);
+            Console.WriteLine("Tring Do: "+trinhDo);
+            Console.WriteLine("So Tiet: "+soTiet);
         }
     }
 }
