@@ -63,8 +63,8 @@ namespace QLCanBo
         {
             base.Xuat();
             Console.WriteLine("Khoa "+khoa);
-            Console.WriteLine(trinhDo);
-            Console.WriteLine(soTiet);
+            Console.WriteLine("Tring Do"+trinhDo);
+            Console.WriteLine("So Tiet"+soTiet);
         }
     }
 }
